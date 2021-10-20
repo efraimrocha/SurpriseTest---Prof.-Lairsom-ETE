@@ -4,8 +4,8 @@ def adicionar_elemento(lista: list, elemento: str) -> bool:
     Se ele passar na verificação, inserir na lista e retornar
     verdadeiro, caso contrário, retorne falso
     '''
-    letra1 = elemento[0]
-    if (letra1 == letra1.upper()):
+    ltr = elemento[0]
+    if (ltr == ltr.upper()):
         lista.append(elemento)
         return True
     else:
