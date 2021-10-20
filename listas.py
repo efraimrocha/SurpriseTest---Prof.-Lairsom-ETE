@@ -26,8 +26,8 @@ def remover_elemento(lista: list, elemento: str) -> bool:
     Se ele estiver contido na lista, remover o elemento e
     retornar verdadeiro, caso contrário, retornar falso.
     '''
-    #buscar_elemento()
-    if elemento in lista:
+    nome = buscar_elemento(lista,elemento)
+    if nome == True:
         lista.remove(elemento)
         return True
     else:
