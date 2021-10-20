@@ -58,8 +58,8 @@ def pegar_quantidade(lista: list) -> int:
     Retorna a quantidade de elementos dentro
     da lista
     '''
-    q = len(lista)
-    return q
+    
+    return len(lista)
 
 
 def converter_maiusculo(lista: list) -> list:
@@ -68,8 +68,7 @@ def converter_maiusculo(lista: list) -> list:
     maiúscula e os retorna em uma nova lista
     '''
     lista2 = [i.upper() for i in lista]
-    lista = lista2
-    return lista
+    return lista2
 
 
 
