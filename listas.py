@@ -4,8 +4,8 @@ def adicionar_elemento(lista: list, elemento: str) -> bool:
     Se ele passar na verificação, inserir na lista e retornar
     verdadeiro, caso contrário, retorne falso
     '''
-    ltr = elemento[0]
-    if (ltr == ltr.upper()):
+    letra1 = elemento[0]
+    if (letra1 == letra1.upper()):
         lista.append(elemento)
         return True
     else:
@@ -33,7 +33,6 @@ def remover_elemento(lista: list, elemento: str) -> bool:
     else:
         return False
         
-
 
 
 def limpar_lista(lista: list) -> None:
@@ -78,9 +77,7 @@ def eliminar_repetidos(lista: list) -> list:
     Remove todos os elementos repetidos na lista
     e retorna uma lista nova (não vale utilizar o set)
     '''
-    nova_lista = []
-    for i in lista:
-        if i not in nova_lista:
-            nova_lista.append(i)
-    return nova_lista
+    new_list = []
+    listax = [new_list.append(i) for i in lista if i not in new_list]
+    return new_list
     
